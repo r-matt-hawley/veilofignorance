@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/style.css"> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Veil of Ignorance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="api">API</a>
+            </li>
+        </div>
+      </nav>
+
+<h2>User-friendly API:</h2>
+    <h4>Base URL: <code class = "highlighter-rouge">https://veilofignorance.herokuapp.com/</code></h4>
+    <h4>Endpoint: <code class = "highlighter-rouge">/api/veilofignorance/</code></h4>
+    <h5>The response time will likely be a few seconds long on the first request, 
+            because this app is running on a free Heroku dyno. Subsequent requests will behave as normal.</h5>
+    <br>
+    <h2>What data is available?:</h2>
+    <h4>
+            <ul>
+                    <li>Age and Sex</li>
+                    <li>Race and Hispanic Origin</li>
+                    <li>Population Characteristics</li>
+                    <li>Housing</li>
+                    <li>Families & Living Arrangements</li>
+                    <li>Computer and Internet Usage</li>
+                    <li>Education</li>
+                    <li>Economy</li>
+                    <li>Transportation</li>
+                    <li>Income & Poverty</li>
+                    <li>Businesses</li>
+                    <li>Geography</li>
+                  </ul>
+    </h4>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>
+        <!-- <script type="text/javascript" src="/static/js/logic.js"></script> -->
+        <script src="{{ url_for('static', filename='js/logic.js') }}"></script>
+</body>
+</html>
