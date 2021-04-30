@@ -5,6 +5,7 @@ import pandas as pd
 from flask import Flask, jsonify, render_template, redirect, url_for
 import pymongo
 import json
+from config import connstr
 
 #################################################
 # Helper Functions
@@ -19,7 +20,7 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 # Set up Mongo/PyMongo
-conn = "mongodb://heroku_2rsv5d25:iktn3mgtq8k4qluqgmlhug6kp6@ds233228.mlab.com:33228/heroku_2rsv5d25"
+conn = connstr
 client = pymongo.MongoClient(conn,
                              connectTimeoutMS=30000,
                              socketTimeoutMS=None,
