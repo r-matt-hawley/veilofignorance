@@ -19,7 +19,7 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 # Set up Mongo/PyMongo
-conn = "mongodb://heroku_2rsv5d25:iktn3mgtq8k4qluqgmlhug6kp6@ds233228.mlab.com:33228/heroku_2rsv5d25"
+conn = "mongodb+srv://heroku_2rsv5d25:iktn3mgtq8k4qluqgmlhug6kp6@cluster-2rsv5d25.z9xhd.mongodb.net/heroku_2rsv5d25?retryWrites=true&w=majority"
 client = pymongo.MongoClient(conn,
                              connectTimeoutMS=30000,
                              socketTimeoutMS=None,
